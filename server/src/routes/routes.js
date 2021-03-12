@@ -9,7 +9,7 @@ class CustomRoutes {
     }
     createRoutes () {
         attachControllers(this.app, [
-            LoginController,
+            LoginController
         ])
         this.app.use((err, req, res, next) => { handleError(err, res) })
         //this.app.use(Access)
